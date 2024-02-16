@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo-current" href="index.html">
           <img class="page-header-logo" src="#" alt="Логотип сайта Седона">
@@ -41,10 +41,12 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <h1 class="visually-hidden" id="intro">Седона - город в Аризоне</h1>
-      <img class="logo" src="#" alt="Добро пожаловать в велеколепнный город Седона">
-      <section class="advantages">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden" id="intro">Седона - город в Аризоне</h1>
+        <img class="hero-logo" src="#" alt="Добро пожаловать в велеколепнный город Седона">
+      </section>
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <b class="advantages">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</b>
@@ -98,12 +100,12 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search">
+      <section class="hotel-search" data-test="search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-button-link" href="catalog.html">Поиск гостиницы в седоне</a>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -114,7 +116,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <h2 class="footer-social-title">
           <span class="visually-hidden">Социальные сети</span>
