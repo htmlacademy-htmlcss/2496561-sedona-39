@@ -19,7 +19,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .page-header {
@@ -109,6 +109,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .advantages-description-dark {
@@ -125,6 +126,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .advantages-description-light {
@@ -141,6 +143,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .advantages-description-midle {
@@ -185,6 +188,7 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .services-description {
@@ -203,6 +207,7 @@ body {
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 
@@ -262,8 +267,8 @@ body {
   text-align: left;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-  width: fill 452px;
-  height: fill 52px;
+  width: 452px;
+  height: 52px;
   color: #000000;
   background-color: #F2F2F2;
   gap: 260px;
@@ -276,8 +281,8 @@ body {
   text-align: center;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-  width: hug 232px;
-  height: hug 52px;
+  width: 232px;
+  height: 52px;
   left: 452px;
   color: #ffffff;
   background-color: #82B3D3;
@@ -313,7 +318,7 @@ body {
 
 .main-catalog {
   background-image: url(../images/backgrounds/filtr-background.jpg);
-  background-color: #ffffff;
+  background-color: inherit;
   color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -363,8 +368,8 @@ body {
   text-align: left;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-  width: fixed 143px;
-  height: hug 48px;
+  width: 143px;
+  height: 48px;
   color: #000000;
   background-color: #F2F2F2;
   gap: 260px;
@@ -378,8 +383,8 @@ body {
   text-align: left;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-  width: fixed 143px;
-  height: hug 48px;
+  width: 143px;
+  height: 48px;
   color: #000000;
   background-color: #F2F2F2;
   gap: 10px;
@@ -393,8 +398,8 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 8px 50px;
-  width: fill 191px;
-  height: hug 48px;
+  width: 191px;
+  height: 48px;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -407,8 +412,8 @@ body {
   text-align: center;
   border-radius: 4px;
   padding: 8px 50px;
-  width: fill 191px;
-  height: hug 48px;
+  width: 191px;
+  height: 48px;
   color: #ffffff;
   background-color: transparent;
   text-transform: uppercase;
@@ -519,7 +524,7 @@ body {
   width: 140px;
   height: 37px;
   align-self: stretch;
-  background-image:  url(../images/vector-stars.svg);
+  background-image: url(../images/vector-stars.svg);
 }
 
 .stars-three span {
@@ -530,7 +535,7 @@ body {
   width: 140px;
   height: 37px;
   align-self: stretch;
-  background-image:  url(../images/vector-stars.svg);
+  background-image: url(../images/vector-stars.svg);
 }
 
 .stars-two span {
@@ -541,7 +546,7 @@ body {
   width: 140px;
   height: 37px;
   align-self: stretch;
-  background-image:  url(../images/vector-stars.svg);
+  background-image: url(../images/vector-stars.svg);
 }
 
 .card-rating {
@@ -612,8 +617,8 @@ body {
   text-align: left;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
-  width: fill 452px;
-  height: fill 52px;
+  width: 452px;
+  height: 52px;
   color: #000000;
   background-color: #f2f2f2;
   gap: 260px;
@@ -626,8 +631,8 @@ body {
   text-align: center;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
-  width: hug 232px;
-  height: hug 52px;
+  width: 232px;
+  height: 52px;
   left: 452px;
   color: #ffffff;
   background-color: #82B3D3;
