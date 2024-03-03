@@ -8,45 +8,42 @@
   </head>
 
   <body>
-    <header class="page-header" data-test="header">
-      <nav class="navigation">
-        <a class="navigation-logo-current" href="index.html">
-          <img class="page-header-logo" src="images/logos/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link-current" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html#intro">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-current">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-              <img class="navigation-user-link-search" src="images/header-icon/search.svg" width="20" height="20"
-                alt="Поиск">
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">
-              <span class="visually-hidden">Понравившиеся гостиницы</span>
-              <img class="navigation-user-link-likes" src="images/header-icon/heart.svg" width="18" height="17"
-                alt="Понравившиеся гостиницы">
-              <span class="likes-number">12</span></a>
-          </li>
-          <li class="navigation-user-item-button">
-            <a class="navigation-user-button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="page-header" data-test="header">
+        <nav class="navigation">
+          <a class="navigation-logo" href="index.html">
+            <img class="page-header-logo" src="images/logos/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#intro">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-user-item">
+              <a class="navigation-link link-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-link link-likes" href="#">
+                <span class="visually-hidden">Понравившиеся гостиницы</span>
+                <span class="likes-number">12</span></a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-link button button-here" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="main-inner" data-test="main">
+    <main class="main-container main-inner" data-test="main">
       <section class="main-catalog">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -134,15 +131,15 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button button" href="#">
+        <a class="button-show button-card" href="#">
           <span class="visually-hidden">Показать карточки</span>
           <img src="images/view-catalog/view-pictures-1.svg" width="16" height="14" alt="Показать карточки">
         </a>
-        <a class="button button-alone" href="#">
+        <a class="button-show button-alone" href="#">
           <span class="visually-hidden">Показать одиночно</span>
           <img src="images/view-catalog/view-pictures-2.svg" width="16" height="14" alt="Показать одиночно">
         </a>
-        <a class="button button-list" href="#">
+        <a class="button-show button-list" href="#">
           <span class="visually-hidden">Показать списком</span>
           <img src="images/view-catalog/view-pictures-3.svg" width="16" height="14" alt="Показать списком">
         </a>
@@ -283,6 +280,7 @@
         </a>
       </section>
     </footer>
+  </div>
   </body>
 
 </html>
