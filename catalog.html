@@ -51,13 +51,10 @@
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                    <span class="visually-hidden">Главная</span>
+                  <span class="visually-hidden">Главная</span>
                 </a>
-              <li class="breadcrumbs-item icon-more">
-                  <span class="visually-hidden">Значок больше</span>
               </li>
-              </li>
-              <li class="breadcrumbs-item">
+              <li class="breadcrumbs-item-list">
                 <a class="breadcrumbs-link-current">Гостиницы</a>
               </li>
             </ul>
@@ -86,7 +83,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -111,13 +108,16 @@
               <fieldset class="catalog-filter-group group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <label class="control-input-min" for="min-price">
-                  <input class="control-input-min" type="text" name="min-price" id="min-price" value="0 от">
+                  <input class="input-min" type="text" name="min-price" id="min-price" value="0">
+                  <span class="input-from">от</span>
                 </label>
                 <label class="control-input-max" for="max-price">
-                  <input class="control-input-max" type="text" name="max-price" id="max-price" value="9000 до">
+                  <input class="input-max" type="text" name="max-price" id="max-price" value="9000">
+                  <span class="input-before">до</span>
                 </label>
                 <label class="control-input-range" for="price">
-                  <input class="input-range" type="range" step="1000" min="0" max="10000" value="9000" id="price" name="price">
+                  <input class="input-range" type="range" step="1000" min="0" max="10000" value="9000" id="price"
+                    name="price">
                 </label>
               </fieldset>
               <div class="filter-button">
@@ -173,7 +173,7 @@
               <a class="product-card-link" href="product.html">
                 <img class="product-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212"
                   alt="Горный хребет на фоне мрачной природы с радугой">
-                  <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="container-card">
                 <p class="card-description">Гостиница</p>
@@ -194,7 +194,7 @@
               <a class="product-card-link" href="product.html">
                 <img class="product-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
                   alt="Гора на фоне прекрасной и светлой природы">
-                  <h3 class="product-card-title">Desert Quail Inn</h3>
+                <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <div class="container-card">
                 <p class="card-description">Гостиница</p>
@@ -215,7 +215,7 @@
               <a class="product-card-link" href="product.html">
                 <img class="product-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
                   alt="Красная гора на фоне ночного звездного неба">
-                  <h3 class="product-card-title">GreenTree Inn</h3>
+                <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <div class="container-card">
                 <p class="card-description">Гостиница</p>
