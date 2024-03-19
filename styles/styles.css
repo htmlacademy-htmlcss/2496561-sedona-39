@@ -96,7 +96,7 @@ body {
   flex-wrap: wrap;
   width: 768px;
   align-items: center;
-  padding-left: 185px;
+  padding-left: 184px;
   margin: 0;
   list-style: none;
   gap: 33px;
@@ -568,6 +568,7 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 .page-footer {
@@ -777,6 +778,59 @@ body {
   padding: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.control:hover .control-mark {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  left: 4px;
+  top: 5px;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid #3F5E72;
+  border-bottom: 2px solid #3F5E72;
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+}
+
 .catalog-filter-group.group-price {
   width: 288px;
   height: 160px;
@@ -842,11 +896,55 @@ body {
   opacity: 30%;
 }
 
-.input-range {
-  width: 288px;
-  height: 20px;
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
   margin: 0;
-  padding: 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #ffffff;
+}
+
+.range-toggle:active {
+  outline: 3px solid #82B3D3;
+}
+
+.range-toggle:focus {
+  outline: 2px solid #82B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
 }
 
 .filter-button {
@@ -870,6 +968,7 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   border: none;
+  cursor: pointer;
 }
 
 .button.button-reset {
@@ -878,9 +977,11 @@ body {
   flex-wrap: wrap;
   width: 191px;
   height: 36px;
+  padding: 8px 58px;
   color: #ffffff;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .catalog {
@@ -907,11 +1008,11 @@ body {
   height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 198px;
+  margin-right: 197px;
 }
 
 .select-control {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -922,8 +1023,9 @@ body {
   padding: 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  cursor: pointer;
   appearance: none;
-  margin-right: 70px;
+  margin-right: auto;
   background-image: url(../images/selector-arrow.svg);
   background-size: 12px 9px;
   background-repeat: no-repeat;
@@ -1031,7 +1133,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  height: 37px;
+  min-height: 37px;
 }
 
 
