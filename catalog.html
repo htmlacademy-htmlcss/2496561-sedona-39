@@ -38,7 +38,7 @@
                 <span class="likes-number">12</span></a>
             </li>
             <li class="navigation-user-item">
-              <a class="navigation-link button button-here" href="#">Хочу сюда!</a>
+              <a class="navigation-link button button-here button-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -93,7 +93,8 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="Hotel" checked>
+                      <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="Hotel"
+                        checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
@@ -107,7 +108,8 @@
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="Apartments">
+                      <input class="visually-hidden control-input" type="radio" name="type-of-housing"
+                        value="Apartments">
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
@@ -116,30 +118,30 @@
               </fieldset>
               <fieldset class="catalog-filter-group group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="control-input-min" for="min-price">
+                <label class="control-input-min">
                   <input class="range-input input-min" type="number" name="min-price" value="0">
                   <span class="input-from">от</span>
                 </label>
-                <label class="control-input-max" for="max-price">
+                <label class="control-input-max">
                   <input class="range-input input-max" type="number" name="max-price" value="9000">
                   <span class="input-before">до</span>
                 </label>
-                <label class="range">
+                <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="right: 61px; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
                   </div>
-                </label>
+                </div>
               </fieldset>
               <div class="filter-button">
-                <button class="button button-apply" type="submit">Применить</button>
-                <button class="button button-reset" type="reset">Сбросить</button>
+                <button class="button button-apply button-blue" type="submit">Применить</button>
+                <button class="button button-reset button-transparent" type="reset">Сбросить</button>
               </div>
             </form>
           </section>
@@ -176,8 +178,8 @@
                 <p class="card-price">От 4000 ₽</p>
               </div>
               <div class="container-description">
-                <a class="button button-details" href="#">Подробнее</a>
-                <a class="button button-favorites" href="#">В избранное</a>
+                <a class="button button-details button-brown" href="#">Подробнее</a>
+                <a class="button button-favorites button-blue" href="#">В избранное</a>
               </div>
               <div class="container-rating">
                 <p class="stars four-stars">
@@ -197,8 +199,8 @@
                 <p class="card-price">От 5000 ₽</p>
               </div>
               <div class="container-description">
-                <a class="button button-details" href="#">Подробнее</a>
-                <a class="button button-favorites-likes" href="#">В избранном</a>
+                <a class="button button-details button-brown" href="#">Подробнее</a>
+                <a class="button button-favorites-likes button-green" href="#">В избранном</a>
               </div>
               <div class="container-rating">
                 <p class="stars four-stars">
@@ -218,8 +220,8 @@
                 <p class="card-price">От 2500 ₽</p>
               </div>
               <div class="container-description">
-                <a class="button button-details" href="#">Подробнее</a>
-                <a class="button button-favorites" href="#">В избранное</a>
+                <a class="button button-details button-brown" href="#">Подробнее</a>
+                <a class="button button-favorites button-blue" href="#">В избранное</a>
               </div>
               <div class="container-rating">
                 <p class="stars three-stars">
@@ -239,8 +241,8 @@
                 <p class="card-price">От 1500 ₽</p>
               </div>
               <div class="container-description">
-                <a class="button button-details" href="#">Подробнее</a>
-                <a class="button button-favorites" href="#">В избранное</a>
+                <a class="button button-details button-brown" href="#">Подробнее</a>
+                <a class="button button-favorites button-blue" href="#">В избранное</a>
               </div>
               <div class="container-rating">
                 <p class="stars two-stars">
@@ -255,19 +257,19 @@
               <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link pagination-state" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link pagination-state" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link pagination-state" href="#">4</a>
             </li>
             <li class="pagination-item">
               <span class="pagination-link pagination-more">...</span>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link pagination-state" href="#">10</a>
             </li>
           </ul>
         </section>
@@ -280,7 +282,7 @@
           <form class="subscription-form form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ваш e-mail</label>
             <input class="button field" type="email" name="e-mail" id="user-email" placeholder="Ваш e-mail">
-            <button class="button button-subscription" type="submit">Подписаться</button>
+            <button class="button button-subscription button-blue" type="submit">Подписаться</button>
           </form>
         </section>
 
@@ -291,24 +293,18 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                <p class="social-vk">
-                  <span class="visually-hidden">Вконтакте</span>
-                </p>
+              <a class="footer-social-link social-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy ">
-                <p class="social-telegram">
-                  <span class="visually-hidden">Телеграмм</span>
-                </p>
+              <a class="footer-social-link social-telegram" href="https://t.me/htmlacademy ">
+                <span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <p class="social-youtube">
-                  <span class="visually-hidden">Ютуб</span>
-                </p>
+              <a class="footer-social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
           </ul>
