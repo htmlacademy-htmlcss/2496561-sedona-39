@@ -49,6 +49,7 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   height: 100%;
+  overflow: hidden
 }
 
 .button {
@@ -600,39 +601,12 @@ body {
   margin: 0;
 }
 
-/* Не получается задать состояние на ссылки! */
-
-.social-vk {
-  display: block;
-  mask-image: url(../images/social/social-vk.svg);
-  width: 24px;
-  height: 15px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.footer-social-link {
   fill: #83B3D3;
 }
 
-.social-telegram {
-  display: block;
-  mask-image: url(../images/social/social-telegram.svg);
-  width: 18px;
-  height: 15px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill: #83B3D3;
-}
 
-.social-youtube {
-  display: block;
-  mask-image: url(../images/social/social-youtube.svg);
-  width: 22px;
-  height: 17px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill: #83B3D3;
-}
-
-.footer-social-link:hover svg
+.footer-social-link:hover svg,
 .footer-social-link:focus svg {
   fill: #68A2CA;
 }
@@ -682,14 +656,12 @@ body {
   height: 33px;
 }
 
-/* Не получается задать состояние логотипу! */
-
-.footer-logo:hover svg,
-.footer-logo:focus svg {
+.autors-logo:hover svg,
+.autors-logo:focus svg {
   fill: #756157;
 }
 
-.footer-logo:active svg {
+.autors-logo:active svg {
   fill: #7561574D;
 }
 
@@ -727,24 +699,19 @@ body {
 }
 
 .breadcrumbs-link {
-  display: block;
-  background-image: url(../images/vector-home.svg);
-  width: 12px;
-  min-height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  fill: #ffffff;
 }
 
 .breadcrumbs-link:hover{
-  background-color: #FFFFFF99;
+  fill: #FFFFFF99;
 }
 
 .breadcrumbs-link:focus{
-  background-color: #ffffff;
+  fill: #ffffff;
 }
 
 .breadcrumbs-link:active{
-  background-color: #FFFFFF4D;
+  fill: #FFFFFF4D;
 }
 
 .breadcrumbs-item-list {
@@ -1375,6 +1342,136 @@ body {
 .subscription-container.subscription-container-catalog {
   text-align: center;
   color: #000000;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F2CC;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  margin: auto;
+  margin-top: 396px;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px 0 #00000026;
+}
+
+.modal-hotel-search {
+  width: 717px;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  width: 540px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 64px;
+  text-transform: uppercase;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../images/vector-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-fieldset {
+  display: flex;
+  border: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.modal-input {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  width: 440px;
+  height: 48px;
+}
+
+.modal-input-container {
+  position: relative;
+  margin-left: auto;
+}
+
+.modal-input-container::after {
+  display: block;
+  position: absolute;
+  content: "";
+  padding: 0;
+  top: 14px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  background-image: url("../images/vector-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.container-guests {
+  margin-left: auto;
+}
+
+.text-message {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  padding-left: 157px;
+}
+
+.text-error {
+  color: #FF5757;
+}
+
+.input-guests {
+  position: absolute;
+  width: 110px;
+  text-align: center;
+}
+
+.quantity-button {
+  position: relative;
 }
 
 .button-brown:hover,
