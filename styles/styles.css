@@ -208,7 +208,7 @@ body {
 
 .container-header {
   text-align: center;
-  padding: 69px 274px 90px 274px;
+  padding: 69px 200px 90px 200px;
 }
 
 .advantages-header {
@@ -372,7 +372,7 @@ body {
 
 .container-services {
   text-align: center;
-  padding: 64px 347px;
+  padding: 64px 250px;
 }
 
 .services-title {
@@ -466,7 +466,7 @@ body {
 
 
 .container-search {
-  padding: 96px 304px;
+  padding: 96px 200px;
   text-align: center;
 }
 
@@ -511,7 +511,7 @@ body {
 }
 
 .subscription-container {
-  padding: 96px 362px 0 362px;
+  padding: 96px 300px 0 300px;
   color: #ffffff;
 }
 
