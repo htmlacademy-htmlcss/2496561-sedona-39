@@ -782,12 +782,10 @@ body {
   margin-bottom: 32px;
 }
 
-
 .catalog-filter-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 16px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -797,6 +795,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.catalog-filter-item {
+  margin-bottom: 16px;
 }
 
 .control {
@@ -816,7 +818,7 @@ body {
   cursor: pointer;
 }
 
-.control:hover {
+.catalog-filter-item:hover {
   opacity: 70%;
 }
 
@@ -826,8 +828,18 @@ body {
   border-radius: 4px;
 }
 
-.control:active {
+.catalog-filter-item:active {
   opacity: 30%;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 20%;
+  cursor: default;
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 20%;
+  cursor: default;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1087,6 +1099,7 @@ body {
 .select-control:disabled {
   border: 2px solid #0000004D;
   color: #0000004D;
+  cursor: default;
 }
 
 .button-card {
@@ -1141,6 +1154,12 @@ body {
 
 .button-show:active {
   border: 2px solid #000000;
+}
+
+.button-show:disabled {
+  background-color: #b3b3b3;
+  opacity: 30%;
+  cursor: default;
 }
 
 .product-list {
@@ -1256,6 +1275,18 @@ body {
   width: 42px;
 }
 
+.product-card-link:hover {
+  opacity: 50%;
+}
+
+.product-card-link:focus {
+  outline: 1px solid #000000;
+}
+
+.product-card-link:active {
+  opacity: 30%;
+}
+
 .pagination {
   display: flex;
   flex-direction: row;
@@ -1278,6 +1309,7 @@ body {
   padding: 12px;
   color: #ffffff;
   background: #82B3D3;
+  border: none;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -1285,6 +1317,7 @@ body {
 .pagination-link-current {
   color: inherit;
   background-color: #f2f2f2;
+  border: none;
 }
 
 .pagination-state:hover,
@@ -1304,6 +1337,7 @@ body {
 
 .pagination-more {
   color: inherit;
+  border: none;
   background-color: #ffffff;
 }
 
@@ -1671,12 +1705,18 @@ body {
   outline: 3px solid #83B3D3;
 }
 
+.field:disabled {
+  background-color: #b3b3b3;
+  opacity: 20%;
+  cursor: default;
+}
+
 .link-status:hover {
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .link-status:focus {
-  outline: 2px solid #000000;
+  opacity: 50%;
 }
 
 .link-status:active {
