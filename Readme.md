@@ -1,7 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Даниил Дворецкий](https://up.htmlacademy.ru/htmlcss/39/user/2496561).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
+* Сайт: [Мой проект Седона](https://daniildvoretskiy.github.io/2496561-sedona-39/).
+
 
 ---
 
