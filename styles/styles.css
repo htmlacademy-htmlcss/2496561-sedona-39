@@ -843,7 +843,7 @@ body {
   cursor: default;
 }
 
-.control-input:disabled ~ .control-label {
+.catalog-filter-item:has(.control-input:disabled) {
   opacity: 20%;
   cursor: default;
 }
