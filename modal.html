@@ -19,13 +19,13 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current link-status">Главная</a>
+              <a class="navigation-link link navigation-link-current link-status">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link-status" href="#">О Седоне</a>
+              <a class="navigation-link link link-status" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link-status" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link link link-status" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -133,7 +133,8 @@
         <section class="subscription" data-test="subscribe">
           <div class="subscription-container">
             <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-            <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+            <p class="subscription-description">Только полезная информация и никакого спама,<br>честное бойскаутское!
+            </p>
           </div>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="user-email">Ваш e-mail</label>
@@ -148,7 +149,8 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="footer-social-link social-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+              <a class="footer-social-link social-vk" href="https://vk.com/htmlacademy" target="_blank"
+                rel="noreferrer noopener">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -157,7 +159,8 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link social-telegram" href="https://t.me/htmlacademy " target="_blank" rel="noreferrer noopener">
+              <a class="footer-social-link social-telegram" href="https://t.me/htmlacademy " target="_blank"
+                rel="noreferrer noopener">
                 <span class="visually-hidden">Телеграмм</span>
                 <svg width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -166,7 +169,8 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="footer-social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+              <a class="footer-social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank" rel="noreferrer noopener">
                 <span class="visually-hidden">Ютуб</span>
                 <svg width="23" height="18" viewBox="0 0 23 18" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -191,62 +195,62 @@
         </section>
       </footer>
     </div>
-      <div class="modal-container" data-test="modal">
-        <div class="modal modal-hotel-search">
-          <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="form-booking" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="modal-fieldset fieldset-date">
-                <label class="modal-label" for="arrival-date">Дата Заезда:</label>
-                <input class="modal-input input-date" type="text" id="arrival-date" name="arrival-date"
-                  placeholder="Укажите дату" value="27 апреля 2020" required>
-                <span class="text-message text-error">Мы не можем отправить вас в прошлое.</span>
-              </p>
-              <p class="modal-fieldset fieldset-date">
-                <label class="modal-label" for="departure-date">Дата Выезда:</label>
-                <input class="modal-input input-date" type="text" id="departure-date" name="departure-date"
-                  placeholder="Укажите дату" value="1 сентября 2023" required>
-                <span class="text-message">На эти даты есть свободные номера. Пока есть.</span>
-              </p>
-              <div class="modal-family-container">
-                <div class="container-adults">
-                  <label class="modal-label" for="adults">Взрослые:</label>
-                  <div class="container-guests">
-                    <button class="minus-button minus-plus" type="button">
-                      <span class="visually-hidden">Уменьшить количество</span>
-                    </button>
-                    <input class="modal-input input-guests" type="number" id="adults" name="adults" min="0" max="10"
-                      placeholder="0" value="2">
-                    <button class="plus-button minus-plus" type="button">
-                      <span class="visually-hidden">Увеличить количество</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="container-children">
-                  <label class="modal-label" for="children">Дети:</label>
-                  <button class="tooltip-button" type="button"></button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                    лет. Дети до 6 лет размещаются бесплатно.</span>
-                  <div class="container-guests">
-                    <button class="minus-button minus-plus" type="button">
-                      <span class="visually-hidden">Уменьшить количество</span>
-                    </button>
-                    <input class="modal-input input-guests" type="number" id="children" name="children" min="0" max="10"
-                      placeholder="0" value="2">
-                    <button class="plus-button minus-plus" type="button">
-                      <span class="visually-hidden">Увеличить количество</span>
-                    </button>
-                  </div>
+    <div class="modal-container" data-test="modal">
+      <div class="modal modal-hotel-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="form-booking" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="modal-fieldset fieldset-date">
+              <label class="modal-label" for="arrival-date">Дата Заезда:</label>
+              <input class="modal-input input-date" type="text" id="arrival-date" name="arrival-date"
+                placeholder="Укажите дату" value="27 апреля 2020" required>
+              <span class="text-message text-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="modal-fieldset fieldset-date">
+              <label class="modal-label" for="departure-date">Дата Выезда:</label>
+              <input class="modal-input input-date" type="text" id="departure-date" name="departure-date"
+                placeholder="Укажите дату" value="1 сентября 2023" required>
+              <span class="text-message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="modal-family-container">
+              <div class="container-adults">
+                <label class="modal-label" for="adults">Взрослые:</label>
+                <div class="container-guests">
+                  <button class="minus-button minus-plus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input class="modal-input input-guests" type="number" id="adults" name="adults" min="0" max="10"
+                    placeholder="0" value="2" required>
+                  <button class="plus-button minus-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
                 </div>
               </div>
-              <button class="button modal-button button-blue" type="submit">Найти</button>
-            </form>
-          </section>
-        </div>
+              <div class="container-children">
+                <label class="modal-label" for="children">Дети:</label>
+                <button class="tooltip-button" type="button"></button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
+                <div class="container-guests">
+                  <button class="minus-button minus-plus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input class="modal-input input-guests" type="number" id="children" name="children" min="0" max="10"
+                    placeholder="0" value="2" required>
+                  <button class="plus-button minus-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-button button-blue" type="submit">Найти</button>
+          </form>
+        </section>
       </div>
+    </div>
   </body>
 
 </html>
