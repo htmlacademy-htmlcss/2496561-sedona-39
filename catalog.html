@@ -19,13 +19,13 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link link-status" href="index.html">Главная</a>
+              <a class="navigation-link link link-status" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link link-status" href="#">О Седоне</a>
+              <a class="navigation-link link link-status" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current link-status">Гостиницы</a>
+              <a class="navigation-link link navigation-link-current link-status">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -104,7 +104,6 @@
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
-                  </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="Motel">
@@ -124,14 +123,16 @@
               </fieldset>
               <fieldset class="catalog-filter-group group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <label class="control-input-min">
-                  <input class="range-input input-min" type="number" name="min-price" value="0">
-                  <span class="input-from">от</span>
-                </label>
-                <label class="control-input-max">
-                  <input class="range-input input-max" type="number" name="max-price" value="9000">
-                  <span class="input-before">до</span>
-                </label>
+                <div class="container-price">
+                  <label class="control-input-min">
+                    <input class="range-input input-min" type="number" name="min-price" value="0" required>
+                    <span class="input-from">от</span>
+                  </label>
+                  <label class="control-input-max">
+                    <input class="range-input input-max" type="number" name="max-price" value="9000" required>
+                    <span class="input-before">до</span>
+                  </label>
+                </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="right: 61px; width: 226px">
@@ -161,15 +162,23 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <a class="button-show button-card" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a class="button-show button-alone" href="#">
-              <span class="visually-hidden">Показать одиночно</span>
-            </a>
-            <a class="button-show button-list" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
+            <ul class="container-show">
+              <li>
+                <a class="button-show button-card" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-show button-alone" href="#">
+                  <span class="visually-hidden">Показать одиночно</span>
+                </a>
+              </li>
+              <li>
+                <a class="button-show button-list" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
           </div>
           <ul class="product-list">
             <li class="product-card hotel-amara">
